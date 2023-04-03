@@ -6,8 +6,8 @@ import ErrorBoundry from '../components/ErrorBoundry';
 import './App.css';
 
 function App() {
-  const [robots, setRobots] = useState([])
-  const [searchfield, setSearchfield] = useState('')
+  const [robots, setRobots] = useState([]) // [] is the initial state
+  const [searchfield, setSearchfield] = useState('') // '' is the initial state
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
